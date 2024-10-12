@@ -7,8 +7,8 @@ def D (u):
     return cos(u*pi)
 
 #!ГУ
-leftBorder = -1 #? 2 рода
-rightBorder = 0 #? 1 рода
+leftBorder = -2 #? 2 рода
+rightBorder = 1 #? 1 рода
 
 
 startX = 0

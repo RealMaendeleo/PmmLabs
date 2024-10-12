@@ -19,12 +19,12 @@ x = []
 for i in arange(0, N_x + 1, h):
     x.append(i)
     u0.append(0)
-    u1.append(sin(2*pi*x[round(i/h)]))
+    u1.append(tau * sin(2*pi*x[round(i/h)]))
     u.append(0)
 
 u0[0]=0
-u1[0]=0
 u0[N_x]=0
+u1[0]=0
 u1[N_x]=0
 u[0]=0
 u[N_x]=0
@@ -46,5 +46,6 @@ for j in range(1, K):
 
 
 plt.grid()
+plt.xlim(0, 1)
 plt.plot(x, u1)
 plt.show()
